@@ -15,6 +15,6 @@ reviewStars.forEach(star =>
 
         countStarsInfo = `Success stars count: ${starValue} (${countStars}) `;
 
-        alert(countStarsInfo);
+        alert(countStarsInfo.replaceAll(',', ''));
     })
 );
