@@ -4,15 +4,16 @@ const reviewStars = Array().slice.call(reviewStarsList);
 reviewStars.forEach(star =>
     star.addEventListener('click', () => {
         const {starValue} = star.dataset;
-        star.parentNode.dataset.currentStars = starValue;
+        const {countStars} = [];
+        let countStarsInfo;
 
-        let countStars = [];
+        star.parentNode.dataset.currentStars = starValue;
 
         for (let i = 0; i < starValue; i++) {
             countStars.push('★');
         }
 
-        let countStarsInfo = `Success stars count: ${starValue} (${countStars}) `;
+        countStarsInfo = `Success stars count: ${starValue} (${countStars}) `;
 
         alert(countStarsInfo);
     })
