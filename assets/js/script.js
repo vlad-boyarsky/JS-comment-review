@@ -4,7 +4,7 @@ const reviewStars = Array().slice.call(reviewStarsList);
 reviewStars.forEach(star =>
     star.addEventListener('click', () => {
         const {starValue} = star.dataset;
-        const {countStars} = [];
+        let countStars = [];
         let countStarsInfo;
 
         star.parentNode.dataset.currentStars = starValue;
