@@ -10,5 +10,13 @@
 }
 
 .review__star:hover, .review__star:hover ~ .review__star {
+    color: #636363;
+}
+
+.review[data-current-stars="5"] .review__star:nth-child(n+1),
+.review[data-current-stars="4"] .review__star:nth-child(n+2),
+.review[data-current-stars="3"] .review__star:nth-child(n+3),
+.review[data-current-stars="2"] .review__star:nth-child(n+4),
+.review[data-current-stars="1"] .review__star:nth-child(n+5) {
     color: #FF9900;
 }
