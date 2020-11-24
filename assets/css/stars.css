@@ -1,0 +1,14 @@
+.review {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.review__star {
+    cursor: pointer;
+    color: #9f9f9f;
+    font-size: 19px;
+}
+
+.review__star:hover, .review__star:hover ~ .review__star {
+    color: #FF9900;
+}
